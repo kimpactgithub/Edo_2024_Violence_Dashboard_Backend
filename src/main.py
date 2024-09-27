@@ -8,7 +8,7 @@ from google.oauth2.service_account import Credentials
 
 SCOPE = ['https://www.googleapis.com/auth/spreadsheets']
 
-creds = Credentials.from_service_account_file(r'C:\Users\kimpact development\Downloads\Ituation Room Live\nevr-dashboard\nevr-dashboard\credentials.json', scopes=SCOPE)
+creds = Credentials.from_service_account_file(r'/etc/secrets/credentials.json', scopes=SCOPE)
 
 # # creds, _ = default()
 gc = gspread.authorize(creds)
